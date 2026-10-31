@@ -37,6 +37,20 @@ import type { AppConfig, Circular, Source, Stats } from "@/lib/types";
 
 const FEED_LIMIT = 100;
 
+const METRIC_BORDER: Record<string, string> = {
+  cobalt: "border-t-cobalt",
+  danger: "border-t-danger",
+  success: "border-t-success",
+  warning: "border-t-warning",
+};
+
+const METRIC_DOT: Record<string, string> = {
+  cobalt: "bg-cobalt",
+  danger: "bg-danger",
+  success: "bg-success",
+  warning: "bg-warning",
+};
+
 export default function OverviewPage() {
   const { user, loading: userLoading } = useStudent();
   const { extras } = useProfileExtras();
@@ -124,21 +138,25 @@ export default function OverviewPage() {
       label: "Notices in your feed",
       value: stats?.circulars ?? circulars.length,
       hint: stats?.alerts ? `${stats.alerts} personalised alerts prepared` : "No alerts created yet",
+      tone: "cobalt",
     },
     {
       label: "Deadlines ahead",
       value: circulars.filter((item) => item.deadline && deadlineState(item.days_left) !== "CLOSED").length,
       hint: "Open, stated deadlines only",
+      tone: "danger",
     },
     {
       label: "Match your profile",
       value: matches,
       hint: user ? "In this feed, by the audience stated in each notice" : "Complete your profile to personalise",
+      tone: "success",
     },
     {
       label: "Sources researched",
       value: enabledSources,
       hint: config?.llm_configured ? "LLM classification enabled" : "Rule-based classification",
+      tone: "warning",
     },
   ];
 
@@ -205,8 +223,14 @@ export default function OverviewPage() {
         <section className="mt-8">
           <div className="grid gap-px overflow-hidden rounded-card border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
             {metrics.map((metric) => (
-              <div key={metric.label} className="bg-paper p-5">
-                <p className="text-[11.5px] text-secondary">{metric.label}</p>
+              <div
+                key={metric.label}
+                className={`border-t-2 bg-paper p-5 ${METRIC_BORDER[metric.tone] ?? "border-t-line"}`}
+              >
+                <p className="flex items-center gap-1.5 text-[11.5px] text-secondary">
+                  <span className={`h-1.5 w-1.5 rounded-full ${METRIC_DOT[metric.tone] ?? "bg-faint"}`} />
+                  {metric.label}
+                </p>
                 {loading ? (
                   <Skeleton className="mt-2 h-8 w-12" />
                 ) : (

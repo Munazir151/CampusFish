@@ -16,13 +16,24 @@ import {
 } from "@/components/ui";
 import { api } from "@/lib/api";
 import { assessApplicability, useStudent } from "@/lib/student";
-import { CATEGORY_META, CATEGORY_ORDER, type Category, type Circular } from "@/lib/types";
+import { CATEGORY_META, CATEGORY_ORDER, CATEGORY_TONE, type Category, type Circular } from "@/lib/types";
 
 const WINDOWS = [
   { key: "all", label: "Any time", days: null },
   { key: "7", label: "Last 7 days", days: 7 },
   { key: "30", label: "Last 30 days", days: 30 },
 ];
+
+const TONE_CHIP: Record<string, string> = {
+  cobalt: "chip-cobalt",
+  warning: "chip-warning",
+  danger: "chip-danger",
+  success: "chip-success",
+  lime: "chip-lime",
+  ink: "chip-ink",
+  quiet: "chip-quiet",
+  neutral: "",
+};
 
 export default function DiscoverPage() {
   const { user } = useStudent();
@@ -171,11 +182,11 @@ export default function DiscoverPage() {
                 key={key}
                 onClick={() => setCategory(key)}
                 className={`chip rounded-full px-3 py-1.5 transition-colors ${
-                  category === key ? "border-acid bg-acid text-midnight" : "hover:bg-mist"
-                }`}
+                  TONE_CHIP[CATEGORY_TONE[key]] ?? ""
+                } ${category === key ? "ring-2 ring-current ring-offset-1 ring-offset-paper" : "hover:bg-mist"}`}
               >
                 {CATEGORY_META[key].label}
-                <span className={category === key ? "text-midnight/55" : "text-faint"}>{counts.get(key) || 0}</span>
+                <span className="opacity-60">{counts.get(key) || 0}</span>
               </button>
             ))}
             {activeFilters > 0 && (

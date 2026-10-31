@@ -581,9 +581,11 @@ export default function ResearchPage() {
           {/* Sources */}
           <aside>
             <div className="overflow-hidden rounded-card border border-line bg-paper">
-              <div className="flex items-center justify-between gap-2 border-b border-line bg-mist px-4 py-3">
+              <div className="flex items-center justify-between gap-2 border-b border-line bg-cobalt/[0.06] px-4 py-3">
                 <div>
-                  <p className="text-[12.5px] font-medium text-ink">Sources</p>
+                  <p className="flex items-center gap-1.5 text-[12.5px] font-medium text-ink">
+                    <span className="h-1.5 w-1.5 rounded-full bg-cobalt" /> Sources
+                  </p>
                   <p className="mt-0.5 text-[11px] text-secondary">
                     {enabledSources} active · {sources.length} configured
                   </p>
@@ -604,7 +606,9 @@ export default function ResearchPage() {
                   : sources.map((source) => (
                       <div
                         key={source.id}
-                        className={`border-l-2 px-4 py-3 ${source.enabled ? "border-l-success" : "border-l-line"}`}
+                        className={`border-l-2 px-4 py-3 transition-colors hover:bg-wash ${
+                          source.enabled ? "border-l-success" : "border-l-line"
+                        }`}
                       >
                         <div className="flex items-start gap-2">
                           <span

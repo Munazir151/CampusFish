@@ -4,16 +4,22 @@ import { deadlineState, DEADLINE_META } from "@/lib/student";
 import { CATEGORY_META, type Circular } from "@/lib/types";
 import { Badge } from "./ui";
 
+const TONE_BOX: Record<string, string> = {
+  danger: "border-[#EEDCD9] bg-[#FBF3F2] text-danger",
+  warning: "border-[#EFE4CB] bg-[#FBF7EE] text-warning",
+  neutral: "border-line bg-wash text-secondary",
+};
+
 export default function DeadlineRow({ circular }: { circular: Circular }) {
   const state = deadlineState(circular.days_left);
   const meta = DEADLINE_META[state];
   const category = CATEGORY_META[circular.category] ?? CATEGORY_META.HOLIDAY_OR_GENERAL;
 
   return (
-    <li className="grid grid-cols-[76px_1fr] gap-4 border-b border-line py-4 last:border-0 sm:grid-cols-[104px_1fr_auto]">
-      <div>
-        <p className="text-[12.5px] font-medium text-ink">{formatDate(circular.deadline)}</p>
-        <p className="mt-0.5 text-[11px] text-secondary">{countdown(circular.days_left)}</p>
+    <li className="grid grid-cols-[96px_1fr] gap-4 border-b border-line py-4 last:border-0 sm:grid-cols-[124px_1fr_auto]">
+      <div className={`h-fit rounded-xl border px-2.5 py-2 text-center ${TONE_BOX[meta.tone] ?? TONE_BOX.neutral}`}>
+        <p className="text-[12.5px] font-medium">{formatDate(circular.deadline)}</p>
+        <p className="mt-0.5 text-[11px] opacity-80">{countdown(circular.days_left)}</p>
       </div>
 
       <div className="min-w-0">

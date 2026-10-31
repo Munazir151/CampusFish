@@ -9,8 +9,9 @@ An AI agent that reads your university and college notice pages, understands wha
 **Exam timetables · Fee deadlines · Revaluation windows · Results · Scholarships · Internships**
 
 [![Status](https://img.shields.io/badge/status-live%20demo-2dd4bf?style=flat-square)](#honest-status)
-[![Agent](https://img.shields.io/badge/powered%20by-TinyFish-1558c9?style=flat-square)](https://tinyfish.ai)
 [![Telegram](https://img.shields.io/badge/alerts-Telegram-229ED9?style=flat-square&logo=telegram&logoColor=white)](https://t.me/CampusFishbot)
+
+<a href="https://tinyfish.ai"><img src="docs/tinyfish-logo.svg" alt="TinyFish" height="26" /></a>
 
 <img src="docs/screenshots/landing.png" alt="CampusFish landing page" width="100%" />
 

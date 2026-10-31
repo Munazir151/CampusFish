@@ -1,0 +1,378 @@
+[
+  {
+    "id": "ee674a5a-b89a-4e38-a49b-e134ffcbfb07",
+    "source_id": "9ed7e964-da1f-4aa4-af3e-74ef682df657",
+    "source_name": "Demo injection",
+    "institution": "Visvesvaraya Technological University",
+    "title": "Examination Registration and Fee Payment for B.E. 7th Semester (2022 Scheme) - Last Date Extended",
+    "published_date": "2026-10-31",
+    "url": "https://vtu.ac.in/category/examination/",
+    "content_hash": "demo-b49461ed-77f7-4245-a3de-00286f6df63e",
+    "raw_text": "Examination Registration and Fee Payment for B.E. 7th Semester (2022 Scheme) - Last Date Extended. Students of B.E. 7th semester CSE-AIML under 2022 scheme must complete examination registration and pay the prescribed fee on or before 2026-11-04. Late submissions will attract a penalty. Contact the examination section for details.",
+    "category": "FEE_OR_FORM_DEADLINE",
+    "summary": "Exam registration and fee payment for 7th sem CSE-AIML extended - act before the deadline.",
+    "deadline": "2026-11-04",
+    "applies_to": {
+      "branches": [
+        "CSE-AIML"
+      ],
+      "semesters": [
+        "7"
+      ],
+      "schemes": [
+        "2022"
+      ]
+    },
+    "urgency": "HIGH",
+    "action_required": "Pay the exam fee before 2026-11-04",
+    "confidence": "high",
+    "detected_at": "2026-10-31T06:19:02.250510+00:00"
+  },
+  {
+    "id": "36ea7a8f-9f08-48b9-9ab5-b53bc5d76104",
+    "source_id": null,
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "NOTIFICATION -Conduct of \"ON-DEMAND EXAMINATIONS (ODE)\" – reg…",
+    "published_date": "2026-10-29",
+    "url": "https://vtu.ac.in/2026/10/41924/",
+    "content_hash": "246c4b44c99b3f745b18208e472a0ab87b9477eff38dd4547281d0bc74d080db",
+    "raw_text": null,
+    "category": "HOLIDAY_OR_GENERAL",
+    "summary": "Conduct of \"ON-DEMAND EXAMINATIONS (ODE)\" – reg…",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "LOW",
+    "action_required": null,
+    "confidence": "low",
+    "detected_at": "2026-10-31T06:11:47.198797+00:00"
+  },
+  {
+    "id": "c3889aa7-16bb-417b-970e-c1cb5fc43cc1",
+    "source_id": null,
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "NOTIFICATION – Revision on Templates for Grade Cards and Degree Certificates incorporation of Students Photographs – reg",
+    "published_date": "2026-10-28",
+    "url": "https://vtu.ac.in/2026/10/41911/",
+    "content_hash": "a10a847e11d2a641c9214b2497a62356dc3e3d8d46defd3eb8cbbe0394ca2947",
+    "raw_text": null,
+    "category": "RESULT",
+    "summary": "Revision on Templates for Grade Cards and Degree Certificates incorporation of Students Photographs – reg",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "MEDIUM",
+    "action_required": "Check your result",
+    "confidence": "low",
+    "detected_at": "2026-10-31T05:36:47.198797+00:00"
+  },
+  {
+    "id": "120e206f-0165-4e95-bdb5-975abf4a0144",
+    "source_id": null,
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR – Printing students Photographs on Grade Card and Degree certificates – reg.",
+    "published_date": "2026-10-28",
+    "url": "https://vtu.ac.in/2026/10/41908/",
+    "content_hash": "d312e9219635f654410964a45b704c558170f3b620bba6310b9603357ca7775d",
+    "raw_text": null,
+    "category": "RESULT",
+    "summary": "Printing students Photographs on Grade Card and Degree certificates – reg",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "MEDIUM",
+    "action_required": "Check your result",
+    "confidence": "low",
+    "detected_at": "2026-10-31T05:01:47.198797+00:00"
+  },
+  {
+    "id": "40fc6663-5fe2-4e96-9428-7525a6046111",
+    "source_id": null,
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR – Key Answer VTU – ETR",
+    "published_date": "2026-10-28",
+    "url": "https://vtu.ac.in/2026/10/41898/",
+    "content_hash": "01128b60bf7a30008cdd19c17eb71835abe478e5a0e70f7a7eba43a7148585d1",
+    "raw_text": null,
+    "category": "HOLIDAY_OR_GENERAL",
+    "summary": "General",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "LOW",
+    "action_required": null,
+    "confidence": "low",
+    "detected_at": "2026-10-31T04:26:47.198797+00:00"
+  },
+  {
+    "id": "48d83ab4-3fb4-4a8a-87dd-04ca5b9b2f7b",
+    "source_id": null,
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR – Time Table for Eligible students of UG courses, Semester End Examination, Dec. 2026/Jan 2027",
+    "published_date": "2026-10-23",
+    "url": "https://vtu.ac.in/2026/10/41852/",
+    "content_hash": "0a3c11a9a58cb2213de00d47c6c8a0f087a8f840bf0c8aa43e7cc60ea94df878",
+    "raw_text": null,
+    "category": "EXAM_TIMETABLE",
+    "summary": "Time Table for Eligible students of UG courses, Semester End Examination, Dec. 2026/Jan 2027",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [
+        "7"
+      ],
+      "schemes": []
+    },
+    "urgency": "HIGH",
+    "action_required": "Download the exam timetable",
+    "confidence": "medium",
+    "detected_at": "2026-10-31T03:51:47.198797+00:00"
+  },
+  {
+    "id": "bb6de457-15e7-4e49-a22e-e8fa47759053",
+    "source_id": null,
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR – Research and Publication Ethics (CIE) Coursework for Research Scholars for the batch with USN XXX22XXXXX, XXX23XXXX, XXX24XXXXX, and XXX25XXXXX -reg.",
+    "published_date": "2026-10-16",
+    "url": "https://vtu.ac.in/2026/10/41813/",
+    "content_hash": "161e80e22183b2f36d7652524b54245d447c7d052644aefef31f982ecabb2c7a",
+    "raw_text": null,
+    "category": "HOLIDAY_OR_GENERAL",
+    "summary": "Research and Publication Ethics (CIE) Coursework for Research Scholars for the batch with USN XXX22XXXXX, XXX23XXXX, XXX24XXXXX, and XXX25XXXXX -reg",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "LOW",
+    "action_required": null,
+    "confidence": "low",
+    "detected_at": "2026-10-31T03:16:47.198797+00:00"
+  },
+  {
+    "id": "5c7d67e4-c1b6-4209-ae99-73297db15dc4",
+    "source_id": null,
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR – Format for six- Month progress report and Plagiarism report",
+    "published_date": "2026-10-09",
+    "url": "https://vtu.ac.in/2026/10/41729/",
+    "content_hash": "019cb038be99b88bf53acfdd0183880ae73ffa9c2a0225f489df78e61086d796",
+    "raw_text": null,
+    "category": "HOLIDAY_OR_GENERAL",
+    "summary": "Format for six- Month progress report and Plagiarism report",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "LOW",
+    "action_required": null,
+    "confidence": "low",
+    "detected_at": "2026-10-31T02:41:47.198797+00:00"
+  },
+  {
+    "id": "a5485aa3-0a33-40f2-8985-d63eb0c90f09",
+    "source_id": null,
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR – Format for Ph.D. Final Viva voce report.",
+    "published_date": "2026-10-09",
+    "url": "https://vtu.ac.in/2026/10/41726/",
+    "content_hash": "d4e074fe5302bf9bb9b114b53f67b7fa81bde11d0881263acd237486804c82e7",
+    "raw_text": null,
+    "category": "HOLIDAY_OR_GENERAL",
+    "summary": "Format for Ph.D. Final Viva voce report",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "LOW",
+    "action_required": null,
+    "confidence": "low",
+    "detected_at": "2026-10-31T02:06:47.198797+00:00"
+  },
+  {
+    "id": "4e9d3bf1-1289-4d93-b9d6-f532dfabeaac",
+    "source_id": null,
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR – Re-Scheduling OF VTU ELIGIBILITY TEST FOR RESEARCH (VTU-ETR-2026)",
+    "published_date": "2026-10-09",
+    "url": "https://vtu.ac.in/2026/10/41723/",
+    "content_hash": "59f13992eff3eeda5540ecb2890acbb1c3ae3410532fe1bc2a34113142dcf322",
+    "raw_text": null,
+    "category": "HOLIDAY_OR_GENERAL",
+    "summary": "Re-Scheduling OF VTU ELIGIBILITY TEST FOR RESEARCH (VTU-ETR-2026)",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "LOW",
+    "action_required": null,
+    "confidence": "low",
+    "detected_at": "2026-10-31T01:31:47.198797+00:00"
+  },
+  {
+    "id": "5f44651b-572e-4447-9071-0df7548d858c",
+    "source_id": null,
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR – Constitution and verification of Research Advisory Committee for research Scholars – reg",
+    "published_date": "2026-10-08",
+    "url": "https://vtu.ac.in/2026/10/41720/",
+    "content_hash": "f7330e3a6a0b2438a4351ef194d63a5cb50e59f81fcf852833724aacb1c205ab",
+    "raw_text": null,
+    "category": "HOLIDAY_OR_GENERAL",
+    "summary": "Constitution and verification of Research Advisory Committee for research Scholars – reg",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "LOW",
+    "action_required": null,
+    "confidence": "low",
+    "detected_at": "2026-10-31T00:56:47.198797+00:00"
+  },
+  {
+    "id": "5474d94b-d6b7-4e44-861f-c464faf89212",
+    "source_id": null,
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR – Draft Time Table for Eligible students of UG Course, Semester End Examination, Dec.2026/Jan 2027",
+    "published_date": "2026-10-07",
+    "url": "https://vtu.ac.in/2026/10/41716/",
+    "content_hash": "c69080f0b281641544476d70a0ccea08a0737df299b2fe14f31db9e70725f995",
+    "raw_text": null,
+    "category": "EXAM_TIMETABLE",
+    "summary": "Draft Time Table for Eligible students of UG Course, Semester End Examination, Dec.2026/Jan 2027",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "HIGH",
+    "action_required": "Download the exam timetable",
+    "confidence": "low",
+    "detected_at": "2026-10-31T00:21:47.198797+00:00"
+  },
+  {
+    "id": "d374cf61-4ea7-4573-93fe-f95320bbde88",
+    "source_id": null,
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR – Time Table for Ph.D/M.Sc. ( Engg) by Research Degree Course Work Examination, Nov 2026.",
+    "published_date": "2026-10-07",
+    "url": "https://vtu.ac.in/2026/10/41695/",
+    "content_hash": "79836819d96d9abc63e8b635f45e06d0931e416fc5adadf76a2ea8c62d1bcd9e",
+    "raw_text": null,
+    "category": "EXAM_TIMETABLE",
+    "summary": "Time Table for Ph.D/M.Sc. ( Engg) by Research Degree Course Work Examination, Nov 2026",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "HIGH",
+    "action_required": "Download the exam timetable",
+    "confidence": "low",
+    "detected_at": "2026-10-30T23:46:47.198797+00:00"
+  },
+  {
+    "id": "79be5b70-d5c0-4120-b379-1031cd20fb98",
+    "source_id": null,
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR FOR AWARDEES AND Ph.D. SCHOLARS Bus Transportation Details for the 26th Annual Convocation …",
+    "published_date": "2026-09-26",
+    "url": "https://vtu.ac.in/2026/09/41638/",
+    "content_hash": "d0d6a04324a9bb40a5c64443b7641529486b0f070190fa50a8038a0268b8c774",
+    "raw_text": null,
+    "category": "HOLIDAY_OR_GENERAL",
+    "summary": "CIRCULAR FOR AWARDEES AND Ph.D. SCHOLARS Bus Transportation Details for the 26th Annual Convocation …",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "LOW",
+    "action_required": null,
+    "confidence": "low",
+    "detected_at": "2026-10-30T23:11:47.198797+00:00"
+  },
+  {
+    "id": "0dc71939-b2cb-48bc-a059-bd5a64f6d265",
+    "source_id": null,
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "INSTRUCTIONS TO GOLD MEDALLISTS PRIZE WINNERS RANK HOLDERS AND RESEARCH SCHOLARS ATTENDING 26th ANNU…",
+    "published_date": "2026-09-23",
+    "url": "https://vtu.ac.in/2026/09/41607/",
+    "content_hash": "67555a1725e9221491d85c240edffecdbd100fd5a975c1827ab3a29dcc2f0b01",
+    "raw_text": null,
+    "category": "HOLIDAY_OR_GENERAL",
+    "summary": "INSTRUCTIONS TO GOLD MEDALLISTS PRIZE WINNERS RANK HOLDERS AND RESEARCH SCHOLARS ATTENDING 26th ANNU…",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "LOW",
+    "action_required": null,
+    "confidence": "low",
+    "detected_at": "2026-10-30T22:36:47.198797+00:00"
+  },
+  {
+    "id": "9d7f6dda-3d26-4450-b476-0b974b3694f5",
+    "source_id": null,
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "List of Rank Holders of UG Programs for 26th Convocation ( Part I )",
+    "published_date": "2026-09-23",
+    "url": "https://vtu.ac.in/2026/09/41599/",
+    "content_hash": "9a5d4769bb364661fbb49a54f6b02b1b76ddd7b225f4a1d1fa43065f9dc92fa9",
+    "raw_text": null,
+    "category": "HOLIDAY_OR_GENERAL",
+    "summary": "List of Rank Holders of UG Programs for 26th Convocation ( Part I )",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "LOW",
+    "action_required": null,
+    "confidence": "low",
+    "detected_at": "2026-10-30T22:01:47.198797+00:00"
+  }
+]

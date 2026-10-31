@@ -91,12 +91,18 @@ export default function LandingPage() {
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-line">
         <DotPattern
-          width={24}
-          height={24}
-          cx={1}
-          cy={1}
-          cr={1}
-          className="fill-cobalt/[0.16] [mask-image:radial-gradient(620px_circle_at_26%_36%,white,transparent)]"
+          width={18}
+          height={18}
+          cx={1.4}
+          cy={1.4}
+          cr={1.4}
+          className="fill-cobalt/40 md:fill-cobalt/40"
+          style={{
+            maskImage:
+              "radial-gradient(820px circle at 30% 42%, #000 0%, rgba(0,0,0,0.65) 45%, transparent 78%)",
+            WebkitMaskImage:
+              "radial-gradient(820px circle at 30% 42%, #000 0%, rgba(0,0,0,0.65) 45%, transparent 78%)",
+          }}
         />
         <Container className="relative z-10 grid gap-14 py-16 sm:py-24 lg:grid-cols-[1.02fr_0.98fr] lg:items-center lg:gap-10">
           <div className="animate-fade-up">

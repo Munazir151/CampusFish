@@ -17,7 +17,6 @@ import {
   UserCheck,
 } from "lucide-react";
 import AppShell from "@/components/AppShell";
-import { DotPattern } from "@/components/ui/dot-pattern";
 import { Badge, ButtonLink, Container, SectionHeading } from "@/components/ui";
 import { CATEGORY_META, CATEGORY_ORDER } from "@/lib/types";
 
@@ -89,22 +88,8 @@ export default function LandingPage() {
   return (
     <AppShell>
       {/* Hero */}
-      <section className="relative overflow-hidden border-b border-line">
-        <DotPattern
-          width={16}
-          height={16}
-          cx={2}
-          cy={2}
-          cr={2}
-          className="fill-cobalt/60 md:fill-cobalt/60"
-          style={{
-            maskImage:
-              "radial-gradient(1200px circle at 30% 40%, #000 0%, #000 55%, transparent 92%)",
-            WebkitMaskImage:
-              "radial-gradient(1200px circle at 30% 40%, #000 0%, #000 55%, transparent 92%)",
-          }}
-        />
-        <Container className="relative z-10 grid gap-14 py-16 sm:py-24 lg:grid-cols-[1.02fr_0.98fr] lg:items-center lg:gap-10">
+      <section className="border-b border-line">
+        <Container className="grid gap-14 py-16 sm:py-24 lg:grid-cols-[1.02fr_0.98fr] lg:items-center lg:gap-10">
           <div className="animate-fade-up">
             <span className="chip-cobalt">
               <Sparkle size={11} /> Autonomous academic intelligence

@@ -2,7 +2,7 @@
 
 Act as a principal product designer, senior frontend engineer and design systems architect.
 
-Your task is to transform the existing CampusIntel project into a polished, production-quality academic intelligence platform with a distinctive Apple-inspired visual identity.
+Your task is to transform the existing CampusFish project into a polished, production-quality academic intelligence platform with a distinctive Apple-inspired visual identity.
 
 This is not a generic university dashboard. It is an intelligent platform that researches official university and college sources, discovers academic opportunities, detects changes in regulations and notices, and determines whether information is relevant or applicable to individual students.
 
@@ -20,7 +20,7 @@ Before modifying anything:
 6. Preserve existing working functionality.
 7. Do not replace the backend or change the architecture unnecessarily.
 
-The existing project may be based on the VTU Radar build specification. Evolve it into CampusIntel while retaining useful working integrations.
+The existing project may be based on the VTU Radar build specification. Evolve it into CampusFish while retaining useful working integrations.
 
 Do not assume that every feature in the product vision has already been implemented.
 
@@ -28,7 +28,7 @@ If a feature is not supported by the backend, create an honest interface state r
 
 ## 2. PRODUCT IDENTITY
 
-Product: CampusIntel
+Product: CampusFish
 
 Category: Autonomous Academic Intelligence Platform.
 
@@ -38,7 +38,7 @@ Tagline:
 
 Product description:
 
-CampusIntel continuously researches official institutional sources, discovers important academic updates and opportunities, tracks changes in policies and regulations, and helps students understand what applies to them.
+CampusFish continuously researches official institutional sources, discovers important academic updates and opportunities, tracks changes in policies and regulations, and helps students understand what applies to them.
 
 Core product promise:
 
@@ -76,7 +76,7 @@ Visual references:
 - Premium minimalist SaaS applications.
 - Modern research and productivity platforms.
 
-Do not copy any specific website. Create an original CampusIntel identity.
+Do not copy any specific website. Create an original CampusFish identity.
 
 ### Colour system
 
@@ -144,13 +144,13 @@ Do not use a permanent left sidebar.
 
 Navigation:
 
-- CampusIntel logo.
+- CampusFish logo.
 - Overview.
 - Discover.
 - Changes.
 - Eligibility.
 - Research.
-- Ask CampusIntel.
+- Ask CampusFish.
 - Student profile/avatar.
 
 Keep navigation minimal and responsive.
@@ -181,7 +181,7 @@ Supporting copy:
 "Discover opportunities, understand academic changes and stay ahead of everything that matters to your education."
 
 Primary CTA:
-"Explore CampusIntel"
+"Explore CampusFish"
 
 Secondary CTA:
 "How it works"
@@ -191,7 +191,7 @@ Include a carefully designed product preview.
 Sections:
 
 1. Hero.
-2. How CampusIntel works.
+2. How CampusFish works.
 3. Academic intelligence capabilities.
 4. Discover opportunities.
 5. Understand what changed.
@@ -256,7 +256,7 @@ Each item should display:
 
 ### C. You might have missed this
 
-This is a signature CampusIntel feature.
+This is a signature CampusFish feature.
 
 Discover opportunities or benefits students may not have actively searched for.
 
@@ -310,7 +310,7 @@ Keep the layout clean and editorial.
 
 ## 8. CHANGE INTELLIGENCE PAGE
 
-This is one of CampusIntel's signature features.
+This is one of CampusFish's signature features.
 
 Title:
 
@@ -406,7 +406,7 @@ These are related but different concepts.
 
 ## 10. RESEARCH ACTIVITY PAGE
 
-Show CampusIntel's research activity in a sophisticated interface.
+Show CampusFish's research activity in a sophisticated interface.
 
 The page should communicate that the platform actively researches official institutional websites.
 
@@ -671,7 +671,7 @@ Work in this order:
 9. Change intelligence.
 10. Eligibility intelligence.
 11. Research activity.
-12. Ask CampusIntel.
+12. Ask CampusFish.
 13. Student profile.
 14. Responsive refinement.
 15. Loading, empty and error states.
@@ -704,7 +704,7 @@ IMPORTANT:
 
 Do not stop after creating a landing page.
 
-Implement a coherent, polished CampusIntel application experience.
+Implement a coherent, polished CampusFish application experience.
 
 Prioritize real functionality, visual consistency, responsive behaviour and trustworthy academic information over decorative effects.
 

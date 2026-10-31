@@ -3,10 +3,10 @@ import ToastProvider from "@/components/Toast";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CampusIntel — Your academic world. One intelligence platform.",
+  title: "CampusFish — Your academic world. One intelligence platform.",
   description:
-    "CampusIntel researches official institutional sources, discovers academic opportunities, tracks changes in policies and helps students understand what applies to them.",
-  applicationName: "CampusIntel",
+    "CampusFish researches official institutional sources, discovers academic opportunities, tracks changes in policies and helps students understand what applies to them.",
+  applicationName: "CampusFish",
 };
 
 export const viewport: Viewport = {

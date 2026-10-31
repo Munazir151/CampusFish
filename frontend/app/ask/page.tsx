@@ -117,9 +117,9 @@ export default function AskPage() {
     <AppShell>
       <div className="mx-auto w-full max-w-page px-5 pb-20 pt-10 sm:px-8 sm:pt-14">
         <PageHeader
-          eyebrow="Ask CampusIntel"
+          eyebrow="Ask CampusFish"
           title="Ask a question about your academic world."
-          description="Answers are written by a local model from the official notices CampusIntel has captured — with a link to every document used. If the notices do not cover it, it says so instead of guessing."
+          description="Answers are written by a local model from the official notices CampusFish has captured — with a link to every document used. If the notices do not cover it, it says so instead of guessing."
           actions={
             <Badge tone={config?.llm_configured ? "success" : "warning"}>
               {config?.llm_configured ? "Grounded answers" : "Evidence only"}
@@ -318,7 +318,7 @@ export default function AskPage() {
                         <p className="mt-2 text-[12.5px] font-medium text-ink">No captured documents match this question</p>
                         <p className="mx-auto mt-1 max-w-md text-[11.5px] leading-relaxed text-secondary">
                           That may mean the topic is outside the current coverage (examinations, fees, revaluation,
-                          results and general policy), or no source has published it yet. CampusIntel does not fill the
+                          results and general policy), or no source has published it yet. CampusFish does not fill the
                           gap with a generated answer.
                         </p>
                       </div>

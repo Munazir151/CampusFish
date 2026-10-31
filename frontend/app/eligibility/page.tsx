@@ -118,7 +118,7 @@ export default function EligibilityPage() {
         <PageHeader
           eyebrow="Eligibility intelligence"
           title="Understand what applies to you."
-          description="CampusIntel evaluates the audience stated in each official notice against your profile. It distinguishes institutional applicability from individual qualification, and never declares eligibility while a mandatory condition is unknown."
+          description="CampusFish evaluates the audience stated in each official notice against your profile. It distinguishes institutional applicability from individual qualification, and never declares eligibility while a mandatory condition is unknown."
           actions={
             <ButtonLink href="/profile" variant="secondary">
               <UserRound size={13} /> Edit profile
@@ -164,7 +164,7 @@ export default function EligibilityPage() {
             <EmptyState
               icon={<UserRound size={17} />}
               title="Add your academic profile to assess anything"
-              description="Without an institution, branch, semester and scheme there is nothing to match against. CampusIntel will not guess your eligibility."
+              description="Without an institution, branch, semester and scheme there is nothing to match against. CampusFish will not guess your eligibility."
               action={
                 <ButtonLink href="/profile" variant="primary">
                   Set up profile

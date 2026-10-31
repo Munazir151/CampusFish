@@ -219,7 +219,7 @@ export default function ProfilePage() {
             <section id="academic">
               <SectionHeading
                 title="Academic profile"
-                description="Stored by CampusIntel and used for applicability checks."
+                description="Stored by CampusFish and used for applicability checks."
               />
               <form onSubmit={saveProfile} className="card mt-4 p-5 sm:p-6">
                 <div className="grid gap-4 sm:grid-cols-2">
@@ -444,7 +444,7 @@ export default function ProfilePage() {
             <section id="preferences">
               <SectionHeading
                 title="Preferences"
-                description="How CampusIntel reaches you, and optional information used only when a notice requires it."
+                description="How CampusFish reaches you, and optional information used only when a notice requires it."
               />
               <div className="card mt-4 p-5 sm:p-6">
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
@@ -598,7 +598,7 @@ export default function ProfilePage() {
                   <p className="mt-1.5 text-[11px] leading-relaxed text-secondary">
                     Annual income, social category and domicile are optional and stored with your profile so
                     scholarship conditions can be compared. They are never shown to other students, sold, or used to
-                    declare eligibility on their own. Leave them blank and CampusIntel will say the condition needs
+                    declare eligibility on their own. Leave them blank and CampusFish will say the condition needs
                     checking instead of guessing.
                   </p>
                 </div>
@@ -630,7 +630,7 @@ export default function ProfilePage() {
             <div className="rounded-card border border-line bg-wash p-5">
               <p className="text-[12px] font-medium text-ink">Institution structure</p>
               <p className="mt-1.5 text-[11.5px] leading-relaxed text-secondary">
-                CampusIntel does not assume every institution follows the same academic structure. Affiliated colleges,
+                CampusFish does not assume every institution follows the same academic structure. Affiliated colleges,
                 autonomous colleges and universities can each state their own programme, scheme and autonomy status.
               </p>
               <Link href="/eligibility" className="mt-3 inline-flex items-center gap-1 text-[11.5px] font-medium text-cobalt hover:text-cobalt/75">

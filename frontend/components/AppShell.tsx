@@ -20,7 +20,7 @@ const NAV = [
   { href: "/changes", label: "Changes" },
   { href: "/eligibility", label: "Eligibility" },
   { href: "/research", label: "Research" },
-  { href: "/ask", label: "Ask CampusIntel" },
+  { href: "/ask", label: "Ask CampusFish" },
 ];
 
 function initials(name?: string | null) {
@@ -88,7 +88,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
             <div className="ml-auto flex items-center gap-1.5">
               {isLanding ? (
                 <Link href="/overview" className="btn-primary btn-sm hidden sm:inline-flex">
-                  Open CampusIntel
+                  Open CampusFish
                 </Link>
               ) : null}
 
@@ -171,7 +171,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         <footer className="mt-20 border-t border-line">
           <div className="mx-auto flex w-full max-w-page flex-col gap-4 px-5 py-8 text-[12px] text-secondary sm:flex-row sm:items-center sm:justify-between sm:px-8">
             <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-              <span className="font-medium text-ink">CampusIntel</span>
+              <span className="font-medium text-ink">CampusFish</span>
               <span className="hidden sm:inline">Your academic world. One intelligence platform.</span>
             </div>
             <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5">

@@ -295,7 +295,7 @@ export default function ResearchPage() {
       });
       setActiveScanId(res.scan_id);
       setSelectedScanId(res.scan_id);
-      push("Research started. CampusIntel is reading your sources.", "info");
+      push("Research started. CampusFish is reading your sources.", "info");
     } catch (err) {
       push(err instanceof Error ? err.message : "Could not start research", "error");
     } finally {
@@ -365,7 +365,7 @@ export default function ResearchPage() {
         <PageHeader
           eyebrow="Research activity"
           title="Research official sources."
-          description="CampusIntel reads the websites institutions actually publish on. This page shows the live state of that research — what was reached, what was found, and what failed."
+          description="CampusFish reads the websites institutions actually publish on. This page shows the live state of that research — what was reached, what was found, and what failed."
           actions={
             <Button variant="primary" onClick={startResearch} disabled={starting || scanning}>
               {starting || scanning ? <Loader2 size={14} className="animate-spin" /> : <RefreshCw size={14} />}
@@ -708,7 +708,7 @@ export default function ResearchPage() {
         open={addOpen}
         onClose={() => setAddOpen(false)}
         title="Add an official source"
-        description="Use the institution's circulars or notices page. CampusIntel reads it read-only and never submits forms."
+        description="Use the institution's circulars or notices page. CampusFish reads it read-only and never submits forms."
       >
         <form onSubmit={addSource} className="space-y-4">
           <div>
@@ -767,7 +767,7 @@ export default function ResearchPage() {
             />
           </Field>
           <Field
-            label="What should CampusIntel look for? (optional)"
+            label="What should CampusFish look for? (optional)"
             htmlFor="source-goal"
             hint="Overrides the default instruction for this source. Useful for scholarship, loan, internship or job portals with an unusual layout."
           >

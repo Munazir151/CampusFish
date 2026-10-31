@@ -36,12 +36,12 @@ DEFAULT_GOAL = (
 async def lifespan(app: FastAPI):
     db.init_db()
     start_scheduler()
-    logger.info("NoticeRadar backend ready")
+    logger.info("CampusFish backend ready")
     yield
     shutdown_scheduler()
 
 
-app = FastAPI(title="NoticeRadar API", version="1.0.0", lifespan=lifespan)
+app = FastAPI(title="CampusFish API", version="1.0.0", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
@@ -576,7 +576,7 @@ async def test_telegram(user_id: str) -> dict:
         raise HTTPException(status_code=400, detail="Link Telegram first")
     preferences = normalize_preferences(row["preferences"])
     text = (
-        "<b>CampusIntel test alert</b>\n"
+        "<b>CampusFish test alert</b>\n"
         f"Your Telegram alerts are limited to: {preference_summary(preferences)}.\n"
         "Notices outside these rules stay in the dashboard."
     )

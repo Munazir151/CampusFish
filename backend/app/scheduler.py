@@ -163,7 +163,7 @@ async def poll_telegram() -> None:
         if len(parts) < 2:
             await send_telegram(
                 chat_id,
-                "Send <code>/start &lt;your-id&gt;</code> from CampusIntel to link this chat.",
+                "Send <code>/start &lt;your-id&gt;</code> from CampusFish to link this chat.",
             )
             continue
         user_id = parts[1].strip()
@@ -171,7 +171,7 @@ async def poll_telegram() -> None:
             user = conn.execute("SELECT * FROM users WHERE id = ?", (user_id,)).fetchone()
             if not user:
                 await send_telegram(
-                    chat_id, "That CampusIntel account was not found. Open Profile to copy your ID."
+                    chat_id, "That CampusFish account was not found. Open Profile to copy your ID."
                 )
                 continue
             conn.execute("UPDATE users SET telegram_chat_id = ? WHERE id = ?", (chat_id, user_id))

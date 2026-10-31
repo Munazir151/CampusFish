@@ -241,7 +241,7 @@ export default function OverviewPage() {
                   <EmptyState
                     icon={<ScanSearch size={17} />}
                     title="Nothing in your feed yet"
-                    description="CampusIntel has not captured notices from your sources. Run research on the Research page, or add an official source to start."
+                    description="CampusFish has not captured notices from your sources. Run research on the Research page, or add an official source to start."
                     action={
                       <ButtonLink href="/research" variant="primary">
                         <RefreshCw size={14} /> Open research
@@ -370,7 +370,7 @@ export default function OverviewPage() {
                   <EmptyState
                     icon={<CalendarClock size={17} />}
                     title="No dated deadlines captured"
-                    description="CampusIntel only lists deadlines stated in official documents. If none have been captured, nothing is shown."
+                    description="CampusFish only lists deadlines stated in official documents. If none have been captured, nothing is shown."
                   />
                 </div>
               )}
@@ -435,7 +435,7 @@ export default function OverviewPage() {
             <div className="rounded-card border border-line bg-wash p-5">
               <p className="text-[12px] font-medium text-ink">About this briefing</p>
               <p className="mt-2 text-[11.5px] leading-relaxed text-secondary">
-                Every item links to the official document it came from. CampusIntel does not invent notices, deadlines
+                Every item links to the official document it came from. CampusFish does not invent notices, deadlines
                 or eligibility outcomes, and unknown values are shown as not specified.
               </p>
             </div>

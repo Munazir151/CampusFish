@@ -36,7 +36,7 @@ const capabilities = [
   {
     icon: GitCompare,
     title: "Change intelligence",
-    body: "When a regulation is re-issued, CampusIntel compares the previous and current document and reports added, removed and modified provisions.",
+    body: "When a regulation is re-issued, CampusFish compares the previous and current document and reports added, removed and modified provisions.",
     status: "Comparison not connected yet",
   },
   {
@@ -53,9 +53,9 @@ const capabilities = [
   },
   {
     icon: MessagesSquare,
-    title: "Ask CampusIntel",
+    title: "Ask CampusFish",
     body: "Ask a question in plain language and receive an answer grounded in official documents, with citations and next steps.",
-    status: "Answer service not connected yet",
+    status: "Available now",
   },
 ];
 
@@ -63,7 +63,7 @@ const steps = [
   {
     number: "01",
     title: "Research",
-    body: "CampusIntel visits each source you connect and reads the latest circulars and notice pages exactly as a student would.",
+    body: "CampusFish visits each source you connect and reads the latest circulars and notice pages exactly as a student would.",
   },
   {
     number: "02",
@@ -105,7 +105,7 @@ export default function LandingPage() {
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <ButtonLink href="/overview" variant="primary" size="lg">
-                Explore CampusIntel <ArrowRight size={15} />
+                Explore CampusFish <ArrowRight size={15} />
               </ButtonLink>
               <ButtonLink href="#how-it-works" variant="secondary" size="lg">
                 How it works
@@ -132,7 +132,7 @@ export default function LandingPage() {
                 <span className="h-2 w-2 rounded-full bg-mist" />
                 <span className="h-2 w-2 rounded-full bg-mist" />
                 <span className="ml-2 rounded-md bg-mist px-2 py-0.5 font-mono text-[10px] text-faint">
-                  campusintel / overview
+                  campusfish / overview
                 </span>
               </div>
               <div className="space-y-4 p-5">
@@ -193,7 +193,7 @@ export default function LandingPage() {
       <section id="how-it-works" className="border-b border-line">
         <Container className="py-16 sm:py-24">
           <SectionHeading
-            title="How CampusIntel works"
+            title="How CampusFish works"
             description="Three steps, applied continuously to every source you connect."
             action={<span className="eyebrow">The engine</span>}
           />
@@ -253,7 +253,7 @@ export default function LandingPage() {
             </h2>
             <p className="mt-4 max-w-md text-[14.5px] leading-[1.75] text-secondary">
               Scholarships, examination notices, revaluation windows and policy revisions are published in places
-              nobody checks daily. CampusIntel reads them and surfaces what is relevant to your programme.
+              nobody checks daily. CampusFish reads them and surfaces what is relevant to your programme.
             </p>
             <p className="mt-6 flex items-start gap-2 text-[12.5px] leading-relaxed text-secondary">
               <Globe2 size={14} className="mt-0.5 shrink-0 text-faint" />
@@ -301,7 +301,7 @@ export default function LandingPage() {
             </h2>
             <p className="mt-5 max-w-md text-[14.5px] leading-[1.75] text-white/65">
               A regulation that was revised last week is different information from the one you read last semester.
-              CampusIntel keeps previous and current documents side by side when a re-issued version is captured, and
+              CampusFish keeps previous and current documents side by side when a re-issued version is captured, and
               says so plainly when no earlier version exists.
             </p>
             <ButtonLink href="/changes" variant="secondary" className="mt-8 border-white/20 bg-transparent text-white hover:bg-white/10 hover:text-white">
@@ -349,7 +349,7 @@ export default function LandingPage() {
               Understand what applies to you.
             </h2>
             <p className="mt-4 max-w-md text-[14.5px] leading-[1.75] text-secondary">
-              CampusIntel separates three questions that are often merged: does the rule apply to your institution,
+              CampusFish separates three questions that are often merged: does the rule apply to your institution,
               do you qualify individually, and is the opportunity still open? When a mandatory condition is unknown,
               it says so instead of declaring you eligible.
             </p>
@@ -406,7 +406,7 @@ export default function LandingPage() {
               Research official sources.
             </h2>
             <p className="mt-4 max-w-md text-[14.5px] leading-[1.75] text-secondary">
-              CampusIntel reads the websites institutions actually publish on. You can see which sources are being
+              CampusFish reads the websites institutions actually publish on. You can see which sources are being
               researched, when they were last reached, and which ones failed — because a quiet feed is not the same
               as an empty one.
             </p>
@@ -425,7 +425,7 @@ export default function LandingPage() {
             Know what changed. Discover what you missed. Understand what applies to you.
           </h2>
           <p className="mx-auto mt-5 max-w-lg text-[14.5px] leading-relaxed text-secondary">
-            Set your institution, programme and semester once. CampusIntel organises everything else around it.
+            Set your institution, programme and semester once. CampusFish organises everything else around it.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <ButtonLink href="/onboarding" variant="primary" size="lg">

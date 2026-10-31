@@ -84,7 +84,7 @@ export default function OnboardingPage() {
               <Sparkle size={11} /> Academic profile
             </Badge>
             <h1 className="mt-5 font-serif text-[36px] leading-[1.08] tracking-[-0.025em] sm:text-[44px]">
-              Tell CampusIntel what applies to you.
+              Tell CampusFish what applies to you.
             </h1>
             <p className="mt-4 max-w-md text-[14.5px] leading-[1.75] text-secondary">
               Notices are matched against your institution, programme, semester and scheme. You can change any of this
@@ -245,7 +245,7 @@ export default function OnboardingPage() {
                 {[
                   ["Your briefing", "Notices ranked by relevance to your profile and how soon they close."],
                   ["Applicability", "Each notice shows the audience it was issued for, compared with your details."],
-                  ["Research", "You decide which official sources CampusIntel reads and when it runs."],
+                  ["Research", "You decide which official sources CampusFish reads and when it runs."],
                 ].map(([title, body], index) => (
                   <li key={title} className="flex gap-3">
                     <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full border border-cobalt/20 bg-cobalt/5 font-mono text-[9.5px] text-cobalt">
@@ -263,7 +263,7 @@ export default function OnboardingPage() {
             <div className="rounded-card border border-line bg-wash p-6">
               <p className="text-[12px] font-medium text-ink">Academic integrity</p>
               <p className="mt-2 text-[11.5px] leading-relaxed text-secondary">
-                CampusIntel only reports what an official document says. If a deadline, effective date or eligibility
+                CampusFish only reports what an official document says. If a deadline, effective date or eligibility
                 condition is unknown, it is shown as not specified — never guessed.
               </p>
               <Link href="/" className="mt-3 inline-flex items-center gap-1 text-[11.5px] font-medium text-ink hover:text-secondary">

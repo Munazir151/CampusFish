@@ -103,7 +103,7 @@ export default function ChangesPage() {
                 <Badge tone="warning">Interface prepared</Badge>
               </div>
               <p className="mt-1.5 max-w-3xl text-[12.5px] leading-relaxed text-secondary">
-                CampusIntel currently stores each notice it reads, but it does not retain previous versions of the same
+                CampusFish currently stores each notice it reads, but it does not retain previous versions of the same
                 document. Without an earlier version there is no evidence to compare, so this page does not invent a
                 diff, historical dates or changed provisions. What it can show from real data is below.
               </p>
@@ -174,7 +174,7 @@ export default function ChangesPage() {
                             <p className="text-[12.5px] font-medium">No earlier version on record</p>
                           </div>
                           <p className="mt-1.5 text-[11.5px] leading-relaxed text-secondary">
-                            CampusIntel has not captured an earlier copy of this document, so it cannot state what was
+                            CampusFish has not captured an earlier copy of this document, so it cannot state what was
                             added, removed or modified. Nothing is inferred.
                           </p>
                         </div>
@@ -285,7 +285,7 @@ export default function ChangesPage() {
         <section className="mt-14 border-t border-line pt-10">
           <SectionHeading
             title="What a verified comparison will include"
-            description="These are the minimum fields before CampusIntel publishes a reported change."
+            description="These are the minimum fields before CampusFish publishes a reported change."
           />
           <div className="mt-5 grid gap-x-8 gap-y-2.5 sm:grid-cols-2">
             {COMPARISON_REQUIREMENTS.map((requirement) => (

@@ -24,10 +24,10 @@ SCAN_SCHEMA = {
                 "properties": {
                     "title": {"type": "string"},
                     "date": {"type": "string", "nullable": True},
-                    "url": {"type": "string"},
+                    "url": {"type": "string", "nullable": True},
                     "section": {"type": "string", "nullable": True},
                 },
-                "required": ["title", "url"],
+                "required": ["title"],
             },
         }
     },
@@ -125,6 +125,13 @@ async def scan_source(client: TinyFishClient, run: dict, source: dict) -> None:
     _update_run(run_id, status="RUNNING")
 
     goal = (source.get("goal") or "").strip() or SCAN_GOAL_TEMPLATE.format(max_items=8)
+    if (source.get("goal") or "").strip():
+        # Custom goals still feed the same structured schema; tell the agent what shape
+        # the extractor needs so a dynamic site does not come back empty.
+        goal += (
+            " Return each item with: title, date (if shown), and the direct URL — use this listing "
+            "page URL when an item has no stable link. Do not invent items."
+        )
 
     items: list[dict] = []
     tinyfish_run_id: str | None = None

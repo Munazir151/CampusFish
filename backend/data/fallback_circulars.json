@@ -1,10 +1,386 @@
 [
   {
+    "id": "956ad9a9-4406-4d3c-be74-b1673295f338",
+    "source_id": "20f87770-3840-4558-afdb-7bfcc7d76829",
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR – Rescheduling of B.E (2018 Scheme) Examination, June/July 2026.",
+    "published_date": "2026-08-18",
+    "url": "https://vtu.ac.in/2026/08/41241/",
+    "content_hash": "804fc764c8f8e31e1acd43b71b7342b55c0fe255f60dd1828244d1a53f05086c",
+    "raw_text": null,
+    "category": "HOLIDAY_OR_GENERAL",
+    "summary": "Rescheduling of B.E (2018 Scheme) Examination, June/July 2026",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": [
+        "2018"
+      ]
+    },
+    "urgency": "LOW",
+    "action_required": null,
+    "confidence": "low",
+    "detected_at": "2026-10-31T09:42:49.381358+00:00",
+    "details": {}
+  },
+  {
+    "id": "5e068344-0faa-4f61-9968-9d511a21d4c6",
+    "source_id": "20f87770-3840-4558-afdb-7bfcc7d76829",
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR – Revised Draft Time Table for Eligible Students – SUMMER/MAKEUP Examination, June / July 2026- reg.",
+    "published_date": "2026-08-22",
+    "url": "https://vtu.ac.in/2026/08/41303/",
+    "content_hash": "951e5be5e068de73fafae3fd6bf109651787b19e482769b5c865bbe9fd981d51",
+    "raw_text": null,
+    "category": "MAKEUP_OR_REVALUATION",
+    "summary": "Revised Draft Time Table for Eligible Students – SUMMER/MAKEUP Examination, June / July 2026- reg",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "HIGH",
+    "action_required": "Apply for make-up / revaluation",
+    "confidence": "low",
+    "detected_at": "2026-10-31T09:42:49.353977+00:00",
+    "details": {}
+  },
+  {
+    "id": "3219307e-3584-4a32-947c-d12493063161",
+    "source_id": "20f87770-3840-4558-afdb-7bfcc7d76829",
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR – Time Table for Subject of B.E./B.Tech.(2017 Scheme), Semester End Examination, June/July 2026.",
+    "published_date": "2026-08-24",
+    "url": "https://vtu.ac.in/2026/08/41335/",
+    "content_hash": "6c318d0e5f9bac1244365974e7d260b24cf78de0ab7854e940e604ef6ea7b8bf",
+    "raw_text": null,
+    "category": "EXAM_TIMETABLE",
+    "summary": "Time Table for Subject of B.E./B.Tech.(2017 Scheme), Semester End Examination, June/July 2026",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": [
+        "2017"
+      ]
+    },
+    "urgency": "HIGH",
+    "action_required": "Download the exam timetable",
+    "confidence": "low",
+    "detected_at": "2026-10-31T09:42:49.318560+00:00",
+    "details": {}
+  },
+  {
+    "id": "9f59fe87-ae92-44f3-838f-280e1f0c7153",
+    "source_id": "20f87770-3840-4558-afdb-7bfcc7d76829",
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "NOTIFICATION- Submission of Online Examination Application Forms- Summer Semester / MAKEUP Semester End Examinations by the Eligible Students- reg…",
+    "published_date": "2026-08-24",
+    "url": "https://vtu.ac.in/2026/08/41331/",
+    "content_hash": "2d1902b06c5eddd128b34eaaf8416ed858fd8168d17291a8687e1a439ecce4a4",
+    "raw_text": null,
+    "category": "MAKEUP_OR_REVALUATION",
+    "summary": "Submission of Online Examination Application Forms- Summer Semester / MAKEUP Semester End Examinations by the Eligible Students- reg…",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "HIGH",
+    "action_required": "Apply for make-up / revaluation",
+    "confidence": "low",
+    "detected_at": "2026-10-31T09:42:49.284890+00:00",
+    "details": {}
+  },
+  {
+    "id": "dd2ddc69-e727-4254-beb1-86c87b4bc828",
+    "source_id": "20f87770-3840-4558-afdb-7bfcc7d76829",
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR – Time Table for Eligible students of SUMMER – MAKEUP Examination, June/July 2026",
+    "published_date": "2026-08-27",
+    "url": "https://vtu.ac.in/2026/08/41354/",
+    "content_hash": "32e472099e0781eb5b7f3e6c96661b7238be1c6df24d4ec20feaba142f8edede",
+    "raw_text": null,
+    "category": "MAKEUP_OR_REVALUATION",
+    "summary": "Time Table for Eligible students of SUMMER – MAKEUP Examination, June/July 2026",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "HIGH",
+    "action_required": "Apply for make-up / revaluation",
+    "confidence": "low",
+    "detected_at": "2026-10-31T09:42:49.255971+00:00",
+    "details": {}
+  },
+  {
+    "id": "a2f5cd29-09ff-444c-9cbc-7b9933cfbc79",
+    "source_id": "20f87770-3840-4558-afdb-7bfcc7d76829",
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "NOTIFICATION – Twenty-sixth Annual Convocation (Part-I) to award Undergraduate and Research Degrees of VTU – reg.",
+    "published_date": "2026-09-03",
+    "url": "https://vtu.ac.in/2026/09/41402/",
+    "content_hash": "6b33e0618075b10d9a1c31ef8f83d857a517afd63151f65cab69ee11f4b3fff5",
+    "raw_text": null,
+    "category": "HOLIDAY_OR_GENERAL",
+    "summary": "Twenty-sixth Annual Convocation (Part-I) to award Undergraduate and Research Degrees of VTU – reg",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "LOW",
+    "action_required": null,
+    "confidence": "low",
+    "detected_at": "2026-10-31T09:42:49.230936+00:00",
+    "details": {}
+  },
+  {
+    "id": "d93b3e01-a36f-4300-8747-ad8c9512e62f",
+    "source_id": "20f87770-3840-4558-afdb-7bfcc7d76829",
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "Noitification – Filing of Application form for Coursework Examinations of Ph.D. & M.Sc. (Engg.) by Research, October/November 2026-reg…",
+    "published_date": "2026-09-04",
+    "url": "https://vtu.ac.in/2026/09/41428/",
+    "content_hash": "9d69dc7b006eefa5eb3655058d288e47ccb10363dec7bb4434fd63d387876a14",
+    "raw_text": null,
+    "category": "RESEARCH_PROGRAMME",
+    "summary": "Noitification – Filing of Application form for Coursework Examinations of Ph.D. & M.Sc. (Engg.) by Research, October/November 2026-reg…",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "MEDIUM",
+    "action_required": "Review the programme and application requirements",
+    "confidence": "low",
+    "detected_at": "2026-10-31T09:42:49.207230+00:00",
+    "details": {
+      "course_level": "PhD"
+    }
+  },
+  {
+    "id": "f4f3774b-6f56-45e5-9d79-f79ef35de3a4",
+    "source_id": "20f87770-3840-4558-afdb-7bfcc7d76829",
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR – Faculty mapping for odd semester examination 2026-27 -reg..",
+    "published_date": "2026-09-09",
+    "url": "https://vtu.ac.in/2026/09/41448/",
+    "content_hash": "8b0628b1b83b541c041f3f1786c5ed803430fd970d552018703c5b0b4b4ab8d1",
+    "raw_text": null,
+    "category": "HOLIDAY_OR_GENERAL",
+    "summary": "Faculty mapping for odd semester examination 2026-27 -reg",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [
+        "7"
+      ],
+      "schemes": []
+    },
+    "urgency": "LOW",
+    "action_required": null,
+    "confidence": "low",
+    "detected_at": "2026-10-31T09:42:49.183452+00:00",
+    "details": {}
+  },
+  {
+    "id": "d28bf203-20be-4a00-a8c3-45e635ddd1a1",
+    "source_id": "20f87770-3840-4558-afdb-7bfcc7d76829",
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "NOTIFICATION – Practical Examination Schedule – Summer Semester / MAKEUP Semester End Examinations by the Eligible students -reg…",
+    "published_date": "2026-09-09",
+    "url": "https://vtu.ac.in/2026/09/41451/",
+    "content_hash": "e7a58f2f903b5ca9bf7aab028c4fcd89c81936b32a77481d6b496c7f870e3b3e",
+    "raw_text": null,
+    "category": "MAKEUP_OR_REVALUATION",
+    "summary": "Practical Examination Schedule – Summer Semester / MAKEUP Semester End Examinations by the Eligible students -reg…",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [
+        "7"
+      ],
+      "schemes": []
+    },
+    "urgency": "HIGH",
+    "action_required": "Apply for make-up / revaluation",
+    "confidence": "low",
+    "detected_at": "2026-10-31T09:42:49.158998+00:00",
+    "details": {}
+  },
+  {
+    "id": "2d1b7efb-c920-480b-bef6-d19788e84013",
+    "source_id": "20f87770-3840-4558-afdb-7bfcc7d76829",
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR – No documents will be issued in person / by hand from 10th September 2026 to 28th September 2026 in view of 26th Convocation Part – 1",
+    "published_date": "2026-09-09",
+    "url": "https://vtu.ac.in/2026/09/41459/",
+    "content_hash": "62ad7f5252a596ae34a326a5d5ab1095cd146bb21064f6a74a6db8532184411b",
+    "raw_text": null,
+    "category": "HOLIDAY_OR_GENERAL",
+    "summary": "No documents will be issued in person / by hand from 10th September 2026 to 28th September 2026 in view of 26th Convocation Part –...",
+    "deadline": "2026-09-10",
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "LOW",
+    "action_required": null,
+    "confidence": "medium",
+    "detected_at": "2026-10-31T09:42:49.137755+00:00",
+    "details": {}
+  },
+  {
+    "id": "d57d6c97-4361-4962-b03f-2f3d39e200b6",
+    "source_id": "20f87770-3840-4558-afdb-7bfcc7d76829",
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR – Rescheduling of B.E./B.Tech. (2025 Scheme) Summer Semester Examination, June/July 2026",
+    "published_date": "2026-09-10",
+    "url": "https://vtu.ac.in/2026/09/41471/",
+    "content_hash": "a5b72bd475e96408ce8ff2816baf293123f6234e8200434025f6802c1daee7df",
+    "raw_text": null,
+    "category": "MAKEUP_OR_REVALUATION",
+    "summary": "Rescheduling of B.E./B.Tech. (2025 Scheme) Summer Semester Examination, June/July 2026",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": [
+        "2025"
+      ]
+    },
+    "urgency": "HIGH",
+    "action_required": "Notice",
+    "confidence": "high",
+    "detected_at": "2026-10-31T09:42:49.111755+00:00",
+    "details": {}
+  },
+  {
+    "id": "72a51593-79ad-4958-9fb6-a6b6f8924adc",
+    "source_id": "20f87770-3840-4558-afdb-7bfcc7d76829",
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "CIRCULAR – Ph.D Convocation Circular.",
+    "published_date": "2026-09-12",
+    "url": "https://vtu.ac.in/2026/09/41486/",
+    "content_hash": "ce20562fccd73f2939309bc581574afe0a17965a0319f1c01830dd3a7fc76cec",
+    "raw_text": null,
+    "category": "HOLIDAY_OR_GENERAL",
+    "summary": "Research programmes",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "LOW",
+    "action_required": "Review the programme and application requirements",
+    "confidence": "low",
+    "detected_at": "2026-10-31T09:42:49.084754+00:00",
+    "details": {}
+  },
+  {
+    "id": "772c9579-5855-43d1-9d69-06a264e8c1f8",
+    "source_id": "20f87770-3840-4558-afdb-7bfcc7d76829",
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "NOTIFICATION – Schedule for Submission of CIE marks-Summer Semester End Examinations for the Eligible students – reg…",
+    "published_date": "2026-09-16",
+    "url": "https://vtu.ac.in/2026/09/41499/",
+    "content_hash": "e09b0da95ebbc6493361433fbdb34265e88a6c3f5277da73624ce8c04725a338",
+    "raw_text": null,
+    "category": "EXAM_TIMETABLE",
+    "summary": "Schedule for Submission of CIE marks-Summer Semester End Examinations for the Eligible students – reg…",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [
+        "7"
+      ],
+      "schemes": []
+    },
+    "urgency": "HIGH",
+    "action_required": "Download the exam timetable",
+    "confidence": "low",
+    "detected_at": "2026-10-31T09:42:49.057578+00:00",
+    "details": {}
+  },
+  {
+    "id": "a1790350-300c-485b-9582-a2c25536103d",
+    "source_id": "20f87770-3840-4558-afdb-7bfcc7d76829",
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "Ph.D Scholars List for 26th Convocation (Part – I)",
+    "published_date": "2026-09-21",
+    "url": "https://vtu.ac.in/2026/09/41565/",
+    "content_hash": "dce8f6a9cda6b2b87ed941a7545cb26d9656288c35166a2eaeaf7a63ab5d8c58",
+    "raw_text": null,
+    "category": "RESEARCH_PROGRAMME",
+    "summary": "Ph.D Scholars List for 26th Convocation (Part – I)",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "MEDIUM",
+    "action_required": "Review the programme and application requirements",
+    "confidence": "low",
+    "detected_at": "2026-10-31T09:42:49.030596+00:00",
+    "details": {
+      "course_level": "PhD"
+    }
+  },
+  {
+    "id": "519e3b8b-ce15-4fb4-9247-d5a8a6d25770",
+    "source_id": "20f87770-3840-4558-afdb-7bfcc7d76829",
+    "source_name": "VTU - Examination",
+    "institution": "Visvesvaraya Technological University",
+    "title": "NOTIFICATION – Submission of Application Forms for Revaluation – reg",
+    "published_date": "2026-09-23",
+    "url": "https://vtu.ac.in/2026/09/41604/",
+    "content_hash": "2508f721d66d238ae37f54c636d384e6646d16927191bd60643a804b7bcb8ae4",
+    "raw_text": null,
+    "category": "MAKEUP_OR_REVALUATION",
+    "summary": "Submission of Application Forms for Revaluation – reg",
+    "deadline": null,
+    "applies_to": {
+      "branches": [],
+      "semesters": [],
+      "schemes": []
+    },
+    "urgency": "HIGH",
+    "action_required": "Submit application form by deadline",
+    "confidence": "low",
+    "detected_at": "2026-10-31T09:42:48.996599+00:00",
+    "details": {}
+  },
+  {
     "id": "905b7778-c0a7-4ac5-aff9-7cd7136af922",
     "source_id": "20f87770-3840-4558-afdb-7bfcc7d76829",
     "source_name": "Demo injection",
     "institution": "Visvesvaraya Technological University",
-    "title": "CampusIntel demo scholarship for CSE-AIML 7th semester (2022 scheme) #144408",
+    "title": "CampusFish demo scholarship for CSE-AIML 7th semester (2022 scheme) #144408",
     "published_date": "2026-10-31",
     "url": "https://vtu.ac.in/category/examination/",
     "content_hash": "demo-c27e5199-2c24-45f7-9eb2-ecdfb524cfca",
@@ -27,36 +403,6 @@
     "action_required": "Pay the exam fee before 2026-11-03",
     "confidence": "high",
     "detected_at": "2026-10-31T09:14:11.855969+00:00",
-    "details": {}
-  },
-  {
-    "id": "42db74a3-539c-4c17-a76b-77bfdffcc015",
-    "source_id": "20f87770-3840-4558-afdb-7bfcc7d76829",
-    "source_name": "Demo injection",
-    "institution": "Visvesvaraya Technological University",
-    "title": "Workshop on CAD tools for Mechanical Engineering students (3rd semester, 2022 scheme)",
-    "published_date": "2026-10-31",
-    "url": "https://vtu.ac.in/category/examination/",
-    "content_hash": "demo-6bc57317-1bd2-494f-9856-a7df802795c3",
-    "raw_text": "This workshop is open to B.E. Mechanical Engineering students of the third semester under the 2022 scheme.",
-    "category": "HOLIDAY_OR_GENERAL",
-    "summary": "A workshop for MECH third semester students. Not intended for other branches.",
-    "deadline": "2026-11-04",
-    "applies_to": {
-      "branches": [
-        "MECH"
-      ],
-      "semesters": [
-        "3"
-      ],
-      "schemes": [
-        "2022"
-      ]
-    },
-    "urgency": "LOW",
-    "action_required": "Pay the exam fee before 2026-11-04",
-    "confidence": "high",
-    "detected_at": "2026-10-31T09:13:29.156870+00:00",
     "details": {}
   },
   {

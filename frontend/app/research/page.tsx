@@ -80,8 +80,17 @@ const SOURCE_TEMPLATES = [
 
 function RunPanel({ run }: { run: ScanRun }) {
   const [open, setOpen] = useState(run.status === "RUNNING" || run.status === "PENDING");
+
+  useEffect(() => {
+    if (run.status === "RUNNING" || run.status === "PENDING") setOpen(true);
+  }, [run.status]);
+
   const [agent, setAgent] = useState<AgentRun | null>(null);
   const [agentError, setAgentError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (agent?.status === "RUNNING") setOpen(true);
+  }, [agent?.status]);
 
   useEffect(() => {
     if (!open || !run.tinyfish_run_id) return;
@@ -108,6 +117,11 @@ function RunPanel({ run }: { run: ScanRun }) {
   }, [open, run.tinyfish_run_id]);
 
   const steps = agent?.steps || [];
+  const agentStatus = (agent?.status || "").toUpperCase();
+  const previewEnded =
+    agentStatus === "COMPLETED" || agentStatus === "FAILED" || agentStatus === "CANCELLED";
+  const previewQueued = agentStatus === "PENDING";
+  const previewLive = agentStatus === "RUNNING";
 
   return (
     <div className="rounded-xl border border-line">
@@ -148,7 +162,7 @@ function RunPanel({ run }: { run: ScanRun }) {
                 <span className="font-mono">{run.tinyfish_run_id.slice(0, 10)}</span>
                 <span>{agent?.num_of_steps ?? steps.length} agent steps</span>
                 {agent?.started_at && <span>started {timeAgo(agent.started_at)}</span>}
-                {(run.status === "RUNNING" || run.status === "PENDING") && (
+                {!previewEnded && (
                   <span className="ml-auto inline-flex items-center gap-1.5 font-medium text-cobalt">
                     <span className="h-1.5 w-1.5 animate-soft-pulse rounded-full bg-cobalt" />
                     Live view
@@ -158,13 +172,63 @@ function RunPanel({ run }: { run: ScanRun }) {
 
               {agentError && <p className="mt-2 text-[11px] text-secondary">{agentError}</p>}
 
-              {agent?.status === "PENDING" && (
-                <p className="mt-2 flex items-start gap-2 rounded-lg bg-wash px-2.5 py-2 text-[11.5px] leading-relaxed text-secondary">
-                  <Loader2 size={12} className="mt-0.5 shrink-0 animate-spin" />
-                  Queued at TinyFish. It starts as soon as a browser slot frees up — both sources were submitted
-                  together.
-                </p>
-              )}
+              <div className="mt-3 overflow-hidden rounded-xl border border-line bg-mist">
+                <div className="flex items-center gap-2 border-b border-line px-3 py-2">
+                  <span
+                    className={`h-1.5 w-1.5 rounded-full ${
+                      previewEnded ? "bg-success" : "animate-soft-pulse bg-danger"
+                    }`}
+                  />
+                  <span
+                    className={`text-[10px] font-semibold uppercase tracking-[0.12em] ${
+                      previewEnded ? "text-success" : "text-danger"
+                    }`}
+                  >
+                    {previewEnded ? "Preview ended" : "Live preview"}
+                  </span>
+                  <span className="ml-auto truncate text-[10.5px] text-faint">
+                    {run.source_name || "TinyFish agent"}
+                  </span>
+                </div>
+
+                {previewLive && agent?.streaming_url ? (
+                  <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                    <iframe
+                      src={agent.streaming_url}
+                      title={`Live browser preview — ${run.source_name || "agent"}`}
+                      className="absolute inset-0 h-full w-full border-0"
+                      allow="autoplay; fullscreen"
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
+                ) : previewEnded ? (
+                  <div className="px-4 py-4">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <Badge tone={statusTone(run.status)}>{run.status.toLowerCase()}</Badge>
+                      <span className="text-[12.5px] font-medium text-ink">
+                        {run.new_items_count > 0
+                          ? `${run.new_items_count} new notice${run.new_items_count === 1 ? "" : "s"} captured`
+                          : "Agent run finished"}
+                      </span>
+                      <span className="ml-auto text-[10.5px] text-faint">
+                        {run.total_items_count} read · {run.new_items_count} new
+                      </span>
+                    </div>
+                    <p className="mt-1.5 text-[11px] leading-relaxed text-secondary">
+                      The live stream closes when the browser session ends; the final result and every step are
+                      kept below.
+                    </p>
+                    {run.error && <p className="mt-2 text-[11px] text-danger">{run.error}</p>}
+                  </div>
+                ) : (
+                  <div className="flex h-40 items-center justify-center gap-2 text-[11.5px] text-secondary">
+                    <Loader2 size={13} className="animate-spin" />
+                    {previewQueued
+                      ? "Queued at TinyFish — waiting for a browser slot…"
+                      : "Starting the browser — the live preview appears in a few seconds…"}
+                  </div>
+                )}
+              </div>
 
               <ol className="mt-2.5 space-y-1.5">
                 {steps.slice(0, 8).map((step) => (

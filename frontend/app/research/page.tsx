@@ -13,6 +13,7 @@ import {
   Plus,
   RefreshCw,
   ScanSearch,
+  Square,
   Trash2,
 } from "lucide-react";
 import AppShell from "@/components/AppShell";
@@ -88,7 +89,20 @@ function RunPanel({ run }: { run: ScanRun }) {
 
   const [agent, setAgent] = useState<AgentRun | null>(null);
   const [agentError, setAgentError] = useState<string | null>(null);
-  const [showPreview, setShowPreview] = useState(false);
+  const [stopping, setStopping] = useState(false);
+
+  async function stopAgent() {
+    if (!run.tinyfish_run_id) return;
+    setStopping(true);
+    try {
+      await api.cancelAgentRun(run.tinyfish_run_id);
+      setAgent((prev) => (prev ? { ...prev, status: "CANCELLED", streaming_url: null } : prev));
+    } catch {
+      // the poll below will reflect the real state
+    } finally {
+      setStopping(false);
+    }
+  }
 
   useEffect(() => {
     if (agent?.status === "RUNNING") setOpen(true);
@@ -120,14 +134,8 @@ function RunPanel({ run }: { run: ScanRun }) {
 
   const steps = agent?.steps || [];
   const agentStatus = (agent?.status || "").toUpperCase();
-  const previewEnded =
-    agentStatus === "COMPLETED" || agentStatus === "FAILED" || agentStatus === "CANCELLED";
   const previewQueued = agentStatus === "PENDING";
   const previewLive = agentStatus === "RUNNING";
-
-  useEffect(() => {
-    if (previewEnded) setShowPreview(false);
-  }, [previewEnded]);
 
   return (
     <div className="rounded-xl border border-line">
@@ -168,13 +176,26 @@ function RunPanel({ run }: { run: ScanRun }) {
                 <span className="font-mono">{run.tinyfish_run_id.slice(0, 10)}</span>
                 <span>{agent?.num_of_steps ?? steps.length} agent steps</span>
                 {agent?.started_at && <span>started {timeAgo(agent.started_at)}</span>}
-                {previewLive && agent?.streaming_url && (
-                  <button
-                    onClick={() => setShowPreview((value) => !value)}
-                    className="ml-auto inline-flex items-center gap-1.5 rounded-full border border-cobalt/30 bg-cobalt/[0.06] px-2.5 py-1 text-[10.5px] font-medium text-cobalt transition-colors hover:bg-cobalt/10"
-                  >
-                    <Eye size={11} /> {showPreview ? "Hide preview" : "See preview"}
-                  </button>
+                {previewLive && (
+                  <span className="ml-auto flex items-center gap-1.5">
+                    {agent?.streaming_url && (
+                      <a
+                        href={agent.streaming_url}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="inline-flex items-center gap-1.5 rounded-full border border-cobalt/30 bg-cobalt/[0.06] px-2.5 py-1 text-[10.5px] font-medium text-cobalt transition-colors hover:bg-cobalt/10"
+                      >
+                        <Eye size={11} /> See preview
+                      </a>
+                    )}
+                    <button
+                      onClick={() => void stopAgent()}
+                      disabled={stopping}
+                      className="inline-flex items-center gap-1 rounded-full border border-danger/30 bg-danger/[0.06] px-2.5 py-1 text-[10.5px] font-medium text-danger transition-colors hover:bg-danger/10 disabled:opacity-50"
+                    >
+                      {stopping ? <Loader2 size={10} className="animate-spin" /> : <Square size={9} />} Stop
+                    </button>
+                  </span>
                 )}
                 {previewQueued && (
                   <span className="ml-auto inline-flex items-center gap-1.5 text-[10.5px] text-faint">
@@ -184,20 +205,6 @@ function RunPanel({ run }: { run: ScanRun }) {
               </div>
 
               {agentError && <p className="mt-2 text-[11px] text-secondary">{agentError}</p>}
-
-              {showPreview && previewLive && agent?.streaming_url && (
-                <div className="mt-2.5 overflow-hidden rounded-xl border border-line">
-                  <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-                    <iframe
-                      src={agent.streaming_url}
-                      title={`Live browser preview — ${run.source_name || "agent"}`}
-                      className="absolute inset-0 h-full w-full border-0"
-                      allow="autoplay; fullscreen"
-                      referrerPolicy="no-referrer"
-                    />
-                  </div>
-                </div>
-              )}
 
               <ol className="mt-2.5 space-y-1.5">
                 {steps.slice(0, 8).map((step) => (
@@ -240,6 +247,7 @@ export default function ResearchPage() {
   const [error, setError] = useState<string | null>(null);
 
   const [starting, setStarting] = useState(false);
+  const [stopping, setStopping] = useState(false);
   const [activeScanId, setActiveScanId] = useState<string | null>(null);
   const [scan, setScan] = useState<ScanGroup | null>(null);
   const [selectedScanId, setSelectedScanId] = useState<string | null>(null);
@@ -336,6 +344,28 @@ export default function ResearchPage() {
     }
   }
 
+  async function stopResearch() {
+    const target = activeScanId || scan?.scan_id || selected?.scan_id;
+    if (!target) return;
+    setStopping(true);
+    try {
+      const res = await api.cancelScan(target);
+      setActiveScanId(null);
+      setScan(null);
+      await load();
+      push(
+        res.cancelled_agents > 0
+          ? `Research stopped — ${res.cancelled_agents} agent${res.cancelled_agents === 1 ? "" : "s"} cancelled`
+          : "Research stopped",
+        "success",
+      );
+    } catch (err) {
+      push(err instanceof Error ? err.message : "Could not stop research", "error");
+    } finally {
+      setStopping(false);
+    }
+  }
+
   async function toggleSource(source: Source) {
     try {
       await api.updateSource(source.id, { enabled: !source.enabled });
@@ -400,10 +430,18 @@ export default function ResearchPage() {
           title="Research official sources."
           description="CampusFish reads the websites institutions actually publish on. This page shows the live state of that research — what was reached, what was found, and what failed."
           actions={
-            <Button variant="primary" onClick={startResearch} disabled={starting || scanning}>
-              {starting || scanning ? <Loader2 size={14} className="animate-spin" /> : <RefreshCw size={14} />}
-              {scanning ? "Research in progress" : "Run research"}
-            </Button>
+            <div className="flex flex-wrap items-center gap-2">
+              <Button variant="primary" onClick={startResearch} disabled={starting || scanning}>
+                {starting || scanning ? <Loader2 size={14} className="animate-spin" /> : <RefreshCw size={14} />}
+                {scanning ? "Research in progress" : "Run research"}
+              </Button>
+              {scanning && (
+                <Button variant="secondary" onClick={stopResearch} disabled={stopping}>
+                  {stopping ? <Loader2 size={13} className="animate-spin" /> : <Square size={12} />}
+                  Stop research
+                </Button>
+              )}
+            </div>
           }
         />
 

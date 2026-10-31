@@ -58,6 +58,13 @@ export const api = {
   scanStatus: (id: string) => request<ScanGroup>(`/api/scan/${id}`),
   recentScans: () => request<{ items: ScanGroup[] }>("/api/scans"),
   agentRun: (runId: string) => request<AgentRun>(`/api/agent/runs/${runId}`),
+  cancelAgentRun: (runId: string) =>
+    request<{ run_id: string; status?: string }>(`/api/agent/runs/${runId}/cancel`, { method: "POST" }),
+  cancelScan: (scanId: string) =>
+    request<{ scan_id: string; cancelled_agents: number; errors: string[] }>(
+      `/api/scan/${scanId}/cancel`,
+      { method: "POST" },
+    ),
 
   me: (userId?: string) =>
     request<User>(`/api/users/me${userId ? `?user_id=${encodeURIComponent(userId)}` : ""}`),

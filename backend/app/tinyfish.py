@@ -48,6 +48,12 @@ class TinyFishClient:
             raise TinyFishError(f"TinyFish poll failed ({response.status_code}): {response.text[:500]}")
         return response.json()
 
+    async def cancel_run(self, run_id: str) -> dict:
+        response = await self._client.post(f"/v1/runs/{run_id}/cancel")
+        if response.status_code >= 400:
+            raise TinyFishError(f"TinyFish cancel failed ({response.status_code}): {response.text[:300]}")
+        return response.json()
+
     async def wait_for_run(self, run_id: str, timeout_seconds: int) -> dict:
         deadline = asyncio.get_event_loop().time() + timeout_seconds
         delay = 2.0

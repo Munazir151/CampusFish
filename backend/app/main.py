@@ -312,6 +312,69 @@ async def agent_run(run_id: str) -> dict:
     }
 
 
+@app.post("/api/agent/runs/{run_id}/cancel")
+async def cancel_agent_run(run_id: str) -> dict:
+    try:
+        client = TinyFishClient()
+    except TinyFishError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    try:
+        result = await client.cancel_run(run_id)
+    except TinyFishError as exc:
+        raise HTTPException(status_code=502, detail=str(exc)) from exc
+    finally:
+        await client.close()
+    return {"run_id": run_id, "status": result.get("status"), "message": result.get("message")}
+
+
+@app.post("/api/scan/{scan_id}/cancel")
+async def cancel_scan(scan_id: str) -> dict:
+    with db.get_conn() as conn:
+        runs = db.rows_to_dicts(
+            conn.execute("SELECT * FROM scan_runs WHERE scan_group_id = ?", (scan_id,)).fetchall()
+        )
+    if not runs:
+        raise HTTPException(status_code=404, detail="Scan not found")
+
+    cancelled_agents = 0
+    errors: list[str] = []
+    client = None
+    try:
+        client = TinyFishClient()
+    except TinyFishError as exc:
+        errors.append(str(exc))
+
+    try:
+        for run in runs:
+            tinyfish_run_id = run.get("tinyfish_run_id")
+            if not tinyfish_run_id or not client:
+                continue
+            try:
+                result = await client.cancel_run(tinyfish_run_id)
+                if str(result.get("status", "")).upper() == "CANCELLED":
+                    cancelled_agents += 1
+            except TinyFishError as exc:
+                errors.append(str(exc)[:140])
+    finally:
+        if client:
+            await client.close()
+
+    with db.get_conn() as conn:
+        conn.execute(
+            "UPDATE scan_runs SET status = 'CANCELLED', finished_at = ?, "
+            "error = COALESCE(error, 'Cancelled by user') "
+            "WHERE scan_group_id = ? AND status IN ('RUNNING', 'PENDING')",
+            (db.now_iso(), scan_id),
+        )
+        conn.execute(
+            "UPDATE sources SET last_scanned_at = ? WHERE id IN "
+            "(SELECT source_id FROM scan_runs WHERE scan_group_id = ?)",
+            (db.now_iso(), scan_id),
+        )
+
+    return {"scan_id": scan_id, "cancelled_agents": cancelled_agents, "errors": errors}
+
+
 @app.get("/api/agent/runs/{run_id}/steps/{step_id}/screenshot")
 async def agent_screenshot(run_id: str, step_id: str) -> Response:
     if not settings.tinyfish_api_key:

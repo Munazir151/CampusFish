@@ -91,17 +91,17 @@ export default function LandingPage() {
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-line">
         <DotPattern
-          width={18}
-          height={18}
-          cx={1.4}
-          cy={1.4}
-          cr={1.4}
-          className="fill-cobalt/40 md:fill-cobalt/40"
+          width={16}
+          height={16}
+          cx={2}
+          cy={2}
+          cr={2}
+          className="fill-cobalt/60 md:fill-cobalt/60"
           style={{
             maskImage:
-              "radial-gradient(820px circle at 30% 42%, #000 0%, rgba(0,0,0,0.65) 45%, transparent 78%)",
+              "radial-gradient(1200px circle at 30% 40%, #000 0%, #000 55%, transparent 92%)",
             WebkitMaskImage:
-              "radial-gradient(820px circle at 30% 42%, #000 0%, rgba(0,0,0,0.65) 45%, transparent 78%)",
+              "radial-gradient(1200px circle at 30% 40%, #000 0%, #000 55%, transparent 92%)",
           }}
         />
         <Container className="relative z-10 grid gap-14 py-16 sm:py-24 lg:grid-cols-[1.02fr_0.98fr] lg:items-center lg:gap-10">
